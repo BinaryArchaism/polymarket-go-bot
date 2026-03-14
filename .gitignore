@@ -1,0 +1,52 @@
+# Binaries
+/bot
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build output
+/bin/
+/dist/
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.html
+
+# Dependency directories
+/vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files (may contain secrets)
+.env
+.env.local
+.env.*.local
+
+# Config files (may contain secrets)
+config.yaml
+config.docker.yaml
+
+# Data files
+/data/
+
+# Logs
+*.log
+
+# Secrets (never commit)
+*.pem
+*.key
+secrets/

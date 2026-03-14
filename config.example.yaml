@@ -1,0 +1,47 @@
+# Polymarket Trading Bot Configuration
+
+polymarket:
+  clob_url: "https://clob.polymarket.com"
+  gamma_url: "https://gamma-api.polymarket.com"
+  usdce_address: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174"
+  proxy_wallet_address: "0x0000000000000000000000000000000000000000"
+  conditional_token_address: "0x4D97DCd97eC945f40cF65F87097ACe5EA0476045"
+  ctf_exchange_address: "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E"
+
+blockchain:
+  polygon_rpc: "https://rpc.ankr.com/polygon/YOUR_API_KEY"
+
+market:
+  allowed_underlying:
+    - "BTC"
+  update_interval: 15m
+  poll_interval: 500ms
+  min_time_to_expiry: 14m
+  mock_orders: false
+
+strategy:
+  risk_limit: 15
+  min_size: 10
+  max_step: 10
+  eps_min: 0.01
+  eps_max: 0.04
+  tau_min: 0.05
+  tau_max: 0.90
+  k_min: 0.20
+  k_max: 1.00
+  alpha: 2.50
+  e_max: 0.35
+  debounce: 500
+  stop_tte: 0
+
+database:
+  user: "postgres"
+  password: "postgres"
+  host: "localhost"
+  port: "5432"
+  dbname: "polybot"
+
+telegram:
+  enabled: false
+  bot_token: "YOUR_TELEGRAM_BOT_TOKEN"
+  chat_id: 0
